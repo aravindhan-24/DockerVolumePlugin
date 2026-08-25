@@ -1,0 +1,16 @@
+[Unit]
+Description=Docker XFS volume plugin
+Before=docker.service
+Wants=docker.service
+RequiresMountsFor=/mnt/network_drive/plugin/xfs
+After=local-fs.target
+
+[Service]
+Type=simple
+TimeoutStartSec=30
+ExecStart=/usr/bin/VolumePlugin -c /etc/dockerplugins/VolumePlugin/config.json
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

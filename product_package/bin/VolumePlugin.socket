@@ -1,0 +1,8 @@
+[Unit]
+Description=docker volume plugin to mount in given location
+
+[Socket]
+ListenStream=/run/docker/plugins/VolumePlugin.sock
+
+[Install]
+WantedBy=sockets.target

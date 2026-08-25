@@ -1,0 +1,17 @@
+{
+  "driver": "VolumePlugin",
+  "statepath": "/var/lib/dockerplugins/VolumePlugin/state.json",
+  "isUnixSocket": true,
+  "socketAddress": "/run/docker/plugins/",
+  "defaultXFSMountPoint": "/mnt/network_drive/plugin/xfs",
+  "defaultBlockHardLimit": "10g",
+  "defaultBlockSoftLimit": "10g",
+  "defaultInodeHardLimit": "500000",
+  "defaultInodeSoftLimit": "500000",
+  "defaultReadBPS": "1m",
+  "defaultWriteBPS": "1m",
+  "defaultReadIOPS": "100",
+  "defaultWriteIOPS": "100",
+  "mntptDirMode": "0755",
+  "ownerOfMountPoint": "aravindh-14205"
+}
